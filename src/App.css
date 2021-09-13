@@ -1,0 +1,308 @@
+:root {
+  --naranja: #FF8153;
+  --VerdeFluo: #D5F879;
+  --VerdeClaro:#429F82;
+  --VerdeOscuro: #005B40;
+  --GrisFondo: #F0F0F0;
+  --GrisClaro: #828F9A;
+  --GrisOscuro: #293B47;
+  --Negro: #15212C;
+  --Blanco: #FFFFFD;
+  --gap: 15px;
+}
+
+html {
+  min-width: 400px;
+  min-height: 400px;
+}
+
+
+
+body {
+  display: grid;
+  width: 100%;
+  height: 250px;
+  grid-template-rows: 100px 520px;
+  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-areas: "header  nav"
+                       "main   main"
+                       "section section"
+                       "footer  footer";
+  min-height: 100vh;
+  font-family: 'Bangers', cursive;
+  
+}
+header {
+  grid-area: header;
+  font-family: 'Bangers', cursive;
+  justify-content: space-between;
+  margin: 20px;
+
+}
+
+
+
+.Logo {
+  float: left;
+  width: 100px;
+  height: 100px;
+  
+}
+
+nav {
+  grid-area: nav;
+  justify-content: space-between;
+
+}
+nav button {
+  font-size: medium;
+  padding: 30px 70px;
+  border-radius: 40px;
+  margin-top: 40px;
+  margin-left: 10%;
+  background-color: var(--Blanco);
+  color: black;
+  border: 2px solid var(--Negro);
+  transition-duration: 0.4s;
+  justify-content: right;
+}
+
+nav button:hover {
+  background-color:var(--VerdeFluo);
+  border: 2px solid var(--Negro);
+  
+
+}
+
+main {
+  grid-area: main;
+  margin: 50px;
+  font-family: 'Bangers', cursive;
+  font-size: 200%;
+  background-color: var(--Blanco);
+}
+
+
+.Headphones {
+  position: absolute;
+  z-index: 1;
+  top: 15%;
+  left: 20%;
+  margin: 10px;
+  width: 400px;
+  height: 400px;
+  animation-name: Headphones;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 20s;
+  transform: translateX(220vh);
+}
+.Lentes {
+  position: absolute;
+  z-index: 1;
+  top: 15%;
+  left: 15%;
+  margin: 10px;
+  width: 760px;
+  height: 760px;
+  animation-name: Lentes;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 20s;
+  transform: translateX(300vh);
+}
+.Micro {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 60%;
+  margin: 30px;
+  width: 160px;
+  height: 280px;
+  animation-name: Micro;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 20s;
+  transform: translateX(-220vh);
+}
+
+.section {
+  grid-area: section;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  background-color: var(--GrisFondo);
+  text-align: center;
+  
+}
+.Subtitle {
+  margin: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  text-align: center;
+
+}
+section button {
+  width: 250px;
+  height: 250px;
+  font-size: 20px;
+  font-style: var(--VerdeFluo);
+  text-align: center;
+  padding: 50px;
+  border-radius: 50%;
+  margin: 30px;
+  background-color: var(--GrisOscuro);
+  color: var(--Blanco);
+  border: 2px solid var(--GrisOscuro);
+  transition-duration: 0.4s;
+ 
+}
+
+section button:hover {
+  background-color:var(--VerdeFluo);
+  border: 2px solid var(--VerdeFluo);
+  color: var(--VerdeClaro);
+
+}
+
+footer {
+  grid-area: footer;
+  justify-content: center;
+
+}
+.LogoBichoBolita {
+  width: 120px;
+  height: 80px;
+  grid-area: footer;
+  margin: 30px;
+  padding: 30px;
+
+}
+
+@media (max-width: 950px) {
+
+  header {
+      grid-area: header;
+      font-family: 'Bangers', cursive;
+      font-size: 10px;
+      justify-content: center;
+      margin: 20px;
+  
+  }
+  
+  
+  
+  .Logo {
+      float: left;
+      width: 100px;
+      height: 100px;
+      
+  }
+
+  nav button {
+      font-size: 15px;
+      padding: 20px 20px;
+      border-radius: 40px;
+      margin-top: 30px;
+      margin-left: 5%;
+      background-color: var(--Blanco);
+      color: black;
+      border: 2px solid var(--Negro);
+      transition-duration: 0.4s;
+      justify-content: right;
+    }
+    
+
+  main {
+      grid-area: main;
+      margin: 40px;
+     
+  }
+  
+  .Headphones {
+      position: absolute;
+      z-index: 1;
+      top: 25%;
+      left: 20%;
+      margin: 10px;
+      width: 200px;
+      height: 200px;
+  }
+  .Lentes {
+      position: absolute;
+      z-index: 1;
+      top: 25%;
+      left: 10%;
+      margin: 10px;
+      width: 380px;
+      height: 380px;
+  }
+  .Micro {
+      position: absolute;
+      z-index: 1;
+      top: 40%;
+      left: 47%;
+      margin: 30px;
+      width: 80px;
+      height: 140px;
+  
+
+  }
+
+  
+}
+
+@keyframes Lentes {
+  
+
+  20% {
+      transform: translateX(300px);
+    }
+  
+    
+    
+
+    100% {
+        transform: translateX(0px);
+      }
+  
+    }
+
+
+
+@keyframes Headphones {
+  
+
+  20% {
+    transform: translateX(-300px);
+  }
+
+  
+  55% {
+    transform: rotate(200deg);
+  }
+
+  100% {
+      transform: translateX(0px);
+    }
+
+  }
+
+
+@keyframes Micro {
+  
+
+  20% {
+      transform: translateX(-300px);
+    }
+  
+    
+    55% {
+      transform: rotate(360deg);
+    }
+
+    100% {
+        transform: translateX(0px);
+      }
+  
+    }

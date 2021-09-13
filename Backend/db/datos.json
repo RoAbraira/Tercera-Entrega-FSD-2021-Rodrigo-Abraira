@@ -1,0 +1,29 @@
+{
+  "tareas": [
+    {
+      "titulo": "Pasear al toby",
+      "prioridad": "prioridad-alta",
+      "id": 0
+    },
+    {
+      "titulo": "Hacer preguntas en Slack",
+      "prioridad": "prioridad-alta",
+      "id": 1
+    },
+    {
+      "titulo": "Limpiar el cuarto",
+      "prioridad": "prioridad-media",
+      "id": 2
+    },
+    {
+      "titulo": "Pasear al toby",
+      "prioridad": "prioridad-alta",
+      "id": 3
+    },
+    {
+      "titulo": "Pasear al toby",
+      "prioridad": "prioridad-alta",
+      "id": 4
+    }
+  ]
+}
